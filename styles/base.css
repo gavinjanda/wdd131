@@ -1,0 +1,139 @@
+header {
+    background-color: rgb(250, 235, 215);
+    text-align: center;
+    padding-bottom: 70px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+nav.mainnav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    background-color: #f1ddbf;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.2rem 0;
+    color: darkcyan;
+}
+
+nav a {
+    color: rgb(38, 38, 136);
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+nav a:hover {
+    color: rgb(148, 148, 229);
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto 400px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+p,
+nav
+ {
+    font-size: 1.3rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: .1rem;
+    line-height: 1.5;
+}
+
+.card {
+    border: 0.5px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px 7px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+}
+
+.resources {
+    grid-template-rows: 1fr 12fr;
+}
+
+.cardtitle {
+    box-sizing: border-box;
+    background-color: #faebd7;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    grid-column: 1/5;
+}
+
+.p-aboutMe {
+    grid-column: 1/3;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.aboutMePic {
+    width: 200px;
+    height: auto;
+    grid-column: 3/5;
+    margin: 20px 30px;
+    box-shadow: 5px 5px 15px gray;
+}
+
+.provoinfotitle {
+    grid-column: 1/5;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    margin: 0px 80px;
+    padding-bottom: 10px;
+}
+
+.provoPic {
+    width: 300px;
+    height: auto;
+    grid-column: 1/2;
+    margin: 20px 30px;
+    box-shadow: 5px 5px 15px gray;
+}
+
+.p-provoinfo {
+    grid-column: 2/5;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.resourceLinks {
+    display: flex;
+    grid-column: 1/3;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+footer {
+    background-color: antiquewhite;
+    text-align: center;
+    margin-top: -13px;
+}
+
+.foot {
+    padding: 10px;
+}

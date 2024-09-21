@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Gavin Janda</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Gavin Janda. My basic homepage and introduction.">
+    <meta name="author" content="Gavin Janda">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>Gavin</h1>
+    <header>
+        <h1 class="title">WDD 131: Dynamic Web Fundamentals - Gavin Janda</h1>
+        <nav class="mainnav">
+            <a href="www.linkedin.com/in/gavin-janda-3b763a24a">LinkedIn</a>
+            <a href="https://byui.instructure.com">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/5?lang=eng">Scripture</a>
+            <a href="">Final Project</a>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="card">
+            <h2 class="cardtitle">About Me</h2>
+            <p class="p-aboutMe">My name is Gavin, I was born in Utah but grew up in Denver, Colorado, and Las Vegas, Nevada. I have three siblings who I love greatly and two loving parents. I currently live in Provo, Utah and am working as a repair technician fixing anything non-pourous. I am a return missionary and speak English, Spanish, and Portuguese.</p>
+            <img class="aboutMePic" src="images/aboutMe.jpeg" alt="Gavin's Profile Picture">
+            <h2 class="provoinfotitle">Provo, Utah</h2>
+            <img class="provoPic" src="images/ProvoCanyon.jpg" alt="Mountain near road in Provo Canyon">
+            <p class="p-provoinfo">Provo is home to many families, businesses, and of course, Brigham Young University. There are plenty of hikes nearby and stores where you can find anything you might need!</p>
+        </section>
+        <section class="card resources">
+            <h2 class="cardtitle">Useful Resources</h2>
+                <nav class="resourceLinks">
+                    <a href="https://chatgpt.com/">ChatGpt</a>
+                    <a href="https://github.com/gavinjanda?tab=repositories">GitHub Repositories</a>
+                    <a href="https://www.churchofjesuschrist.org/?lang=eng">Church of Jesus Christ of Latter-Day Saints Homepage</a>
+                    <a href="https://www.alltrails.com/">AllTrails Hiking Homepage</a>
+                </nav>
+        </section>
+
+    </main>
+    <footer>
+        <p class="foot">
+            ©<span id="year"></span> | Gavin Janda | Utah
+        </p>
+        <p id="lastModified" class="foot"></p>
+    </footer>
 </body>
 </html>
