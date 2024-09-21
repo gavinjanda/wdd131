@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 
 header {
     background-color: #faebd7;
@@ -45,12 +45,12 @@ main {
 h1,
 p,
 nav {
-    font-family: 'Noto Sans'
+    font-family: 'Noto Sans', sans-serif;
 }
 
 h2 {
     font-size: 1.6rem;
-    font-family: 'Merriweather'
+    font-family: 'Merriweather', serif;
 }
 
 p,
