@@ -1,0 +1,26 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header,
+main,
+footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: thin solid #000000;
+    padding: 10px;
+    background-color: #7acdd8;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+section {
+    padding: 5px;
+    background-color: #faebd7;
+    border: thin solid black;
+    margin: 10px;
+}
