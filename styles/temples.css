@@ -1,0 +1,114 @@
+header {
+    background-color: #36506f;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100px;
+    align-items: center;
+}
+
+h1 {
+    grid-column: 1/2;
+    color: #deccbb;
+    padding-left: 20px;
+}
+
+h1,
+p,
+nav {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h2 {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 1.8rem;
+    padding: 10px;
+    color: #36506f;
+    text-align: center;
+}
+
+#menu {
+    display: none;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navitems {
+    color: #deccbb;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+nav a:hover {
+    color: #f9eee4;
+}
+
+main {
+    max-width: 1300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figcaption {
+    font-family:'Merriweather', sans-serif;
+    color: #36506f;
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: #36506f;
+    text-align: center;
+    margin-top: -13px;
+}
+
+.foot {
+    padding: 10px;
+    color: #deccbb;
+}
+
+@media (max-width: 45em) {
+    nav ul {
+        display: none;
+    }
+    
+    #menu {
+        display: block;
+        color: #deccbb;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    nav ul.open {
+        display: flex;
+        justify-self: right;
+        list-style: none;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 100px;
+        width: 50%;
+        gap: 10px;
+        padding: 10px 0;
+        text-align: center;
+        background-color: #36506f;
+        flex-direction: column;
+    }
+}
