@@ -57,10 +57,17 @@ main {
     gap: 1rem;
 }
 
+img {
+    max-width: 21.3em;
+    height: auto;
+}
+
 figure {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 21.3em;
+    height: auto;
 }
 
 figcaption {
@@ -81,7 +88,7 @@ footer {
     color: #deccbb;
 }
 
-@media (max-width: 45em) {
+@media (max-width: 60em) {
     nav ul {
         display: none;
     }

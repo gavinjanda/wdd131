@@ -1,9 +1,15 @@
-@media (min-width: 45em){
+@media (min-width: 60em){
     nav ul {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     grid-column: 2/3;
     list-style: none;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
     }
 }
