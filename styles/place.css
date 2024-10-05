@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-headings: #fffcf3;
+    --color-headings-background: #446180;
+    --main-background: #f0eee0;
+
+    --font-headings: 'Merriweather', sans-serif;
+    --font-other: 'Noto Sans', sans-serif;
+}
+
+body {
+    max-width: 1280px;
+    margin: auto;
+    background-color: var(--main-background);
+}
+
+h1 {
+    background-color: var(--color-headings-background);
+    color: var(--color-headings);
+    font-size: 4rem;
+    text-align: center;
+    padding: 2rem;
+    border-bottom: var(--main-background) 2rem solid;
+}
+
+h1,
+caption {
+    font-family: var(--font-headings);
+}
+
+p,
+td {
+    font-family: var(--font-other);
+}
+
+.largecontainer {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.table-container {
+    display: block;
+    border: 1px solid black;
+    width: 300px;
+    box-sizing: border-box;
+    position: absolute;
+    opacity: 85%;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+table {
+    background-color: var(--main-background);
+    width: 100%;
+    table-layout: auto;
+}
+
+caption {
+    background-color: var(--main-background);
+    color: var(--color-headings-background);
+    font-size: 2.2rem;
+    padding: 8px;
+}
+
+.datadiv {
+    top: 15%;
+    left: 8%;
+}
+
+.weatherdiv {
+    bottom: 15%;
+    right: 1%;
+}
+
+.weathercap::after {
+    content: "🌥";
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.svg {
+    display: none;
+}
+
+.label {
+    text-align: right;
+}
+
+.label,
+.value {
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+footer {
+    background-color: var(--color-headings-background);
+    color: var(--color-headings);
+    text-align: center;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+@media (max-width: 560px) {
+    .table-container {
+        display: flex;
+        flex-direction: column;
+        opacity: 100%;
+        position: static;
+        border: 0;
+        margin: 30px auto;
+    }
+
+    h1 {
+        border-bottom: #fffcf3 2rem solid;
+        color: #fffcf3;
+    }
+
+    caption {
+        color: #374752;
+    }
+
+    .weathercap::after {
+        display: none;
+    }
+
+    table {
+        background-color: #f0eee0;
+    }
+
+    .svg {
+        display: flex;
+        justify-content: center;
+    }
+
+    .weatherdiv {
+        border-top: 0.5px solid black;
+        border-radius: 0;
+        padding-top: 30px;
+    }
+}

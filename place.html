@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131 | </title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Brazil Summary">
+    <meta name="author" content="Gavin Janda">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title">
+        <h1>Brazil</h1>
+    </div>
+    <div class="largecontainer">
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 560px)" width="500" height="750">
+            <source srcset="images/hero-medium.webp" media="(max-width: 1000px)" width="1000" height="500">
+            <img src="images/hero-large.webp" alt="Christus in Rio" width="1280" height="720" class="backgroundimage">
+        </picture>
+        <div class="datadiv table-container">
+            <table>
+                <caption>Data</caption>
+                <tr>
+                    <td class="label"><strong>Area:</strong></td>
+                    <td class="value">8,515,767 km²</td>
+                </tr>
+                <tr>
+                    <td class="label"><strong>Population:</strong></td>
+                    <td class="value">215.3 million</td>
+                </tr>
+                <tr>
+                    <td class="label"><strong>Capital:</strong></td>
+                    <td class="value">Brasília</td>
+                </tr>
+                <tr>
+                    <td class="label"><strong>Languages:</strong></td>
+                    <td class="value">Portuguese</td>
+                </tr>
+                <tr>
+                    <td class="label"><strong>Currency:</strong></td>
+                    <td class="value">Brazilian Real</td>
+                </tr>
+                <tr>
+                    <td class="label"><strong>Time Zone:</strong></td>
+                    <td class="value">GMT+3</td>
+                </tr>
+                <tr>
+                    <td class="label"><strong>Calling Code:</strong></td>
+                    <td class="value">+55</td>
+                </tr>
+                <tr>
+                    <td class="label"><strong>Internet TLD:</strong></td>
+                    <td class="value">.com.br</td>
+                </tr>
+            </table>
+        </div>
+        <div class="weatherdiv table-container">
+            <table>
+                <caption class="weathercap">Weather</caption>
+                <tr>
+                    <td colspan="2">
+                        <div class="svg">
+                            <img class="weather" src="images/weather-mostlycloudy.svg" alt="picture of sun and cloud" width="100" height="100">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label"><strong>Temperature:</strong></td>
+                    <td class="value" id="temperature">14 ℃</td>
+                </tr>
+                <tr>
+                    <td class="label"><strong>Conditions:</strong></td>
+                    <td class="value">Mostly Cloudy</td>
+                </tr>
+                <tr>
+                    <td class="label"><strong>Wind:</strong></td>
+                    <td class="value" id="velocity">12 km/h</td>
+                </tr>
+                <tr>
+                    <td class="label"><strong>Wind Chill:</strong></td>
+                    <td class="value"><span id="actWindChill"></span> ℃</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <p class="foot">
+            ©<span id="year"></span> | Gavin Janda | Utah
+        </p>
+        <p id="lastModified" class="foot"></p>
+    </footer>
+</body>
+</html>

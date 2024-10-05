@@ -118,4 +118,8 @@ footer {
         background-color: #36506f;
         flex-direction: column;
     }
+
+    main {
+        justify-content: center;
+    }
 }
