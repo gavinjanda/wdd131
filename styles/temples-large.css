@@ -6,10 +6,4 @@
     grid-column: 2/3;
     list-style: none;
     }
-
-    main {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
 }

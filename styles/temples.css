@@ -25,6 +25,7 @@ h2 {
     padding: 10px;
     color: #36506f;
     text-align: center;
+    grid-column: 1 / -1;
 }
 
 #menu {
@@ -49,25 +50,42 @@ nav a:hover {
     color: #f9eee4;
 }
 
-main {
-    max-width: 1300px;
-    margin: auto;
+/* Reset styles for testing */
+body, main, .main, figure, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main grid container */
+.main {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 1rem;
+    max-width: 80em;
+    margin: 0 auto;
 }
 
-img {
-    max-width: 21.3em;
-    height: auto;
-}
-
+/* Figure and image styling */
 figure {
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 21.3em;
+}
+
+img {
+    width: 100%;
     height: auto;
+}
+
+.main {
+    max-width: 80em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(21.3em, 1fr));
+    gap: 1rem;
+    margin: auto;
+    padding: 15px;
 }
 
 figcaption {
