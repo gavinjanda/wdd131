@@ -82,6 +82,10 @@ body, main, .main, img {
 img {
     width: 100%;
     height: auto;
+    margin: auto;
+    box-shadow:
+    -2px 2px 5px var(--shadow),
+    2px 2px 5px var(--shadow);
 }
 
 .templecard {
@@ -92,10 +96,6 @@ img {
 
 p {
     text-align: center;
-}
-
-img {
-    box-shadow: 2px 2px 5px 2px var(--shadow);
 }
 
 footer {

@@ -137,7 +137,7 @@ function displayTemples(minYear = null, maxYear = null, minArea = null, maxArea 
                 <p><strong>Location:</strong> ${temple.location}</p>
                 <p><strong>Date Dedicated:</strong> ${temple.dedicated}</p>
                 <p><strong>Area:</strong> ${temple.area} sq ft</p>
-                <img src="${temple.imageUrl}" alt="Picture of ${temple.templeName}" loading="lazyload">
+                <img src="${temple.imageUrl}" alt="Picture of ${temple.templeName}" max-width="400px" max-height="200px" loading="lazyload">
             </div>
             `;
     }).join('');
