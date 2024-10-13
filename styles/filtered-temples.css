@@ -1,15 +1,39 @@
+:root {
+    --primary: #36506f;
+    --secondary: #f5eee8;
+    --shadow: #645d5d;
+    --nav-hover: #f9eee4;
+}
+
 header {
-    background-color: #36506f;
-    position: relative;
+    background-color: var(--primary);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 2fr;
     height: 100px;
     align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0 10px;
+}
+
+.navitems {
+    color: var(--secondary);
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--nav-hover);
 }
 
 h1 {
     grid-column: 1/2;
-    color: #deccbb;
+    color: var(--secondary);
     padding-left: 20px;
 }
 
@@ -23,7 +47,7 @@ h2 {
     font-family: 'Merriweather', sans-serif;
     font-size: 1.8rem;
     padding: 10px;
-    color: #36506f;
+    color: var(--primary);
     text-align: center;
     grid-column: 1 / -1;
 }
@@ -40,17 +64,7 @@ h2 {
     content: "X";
 }
 
-.navitems {
-    color: #deccbb;
-    text-decoration: none;
-    font-size: 1.4rem;
-}
-
-nav a:hover {
-    color: #f9eee4;
-}
-
-body, main, .main, figure, img {
+body, main, .main, img {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -58,17 +72,11 @@ body, main, .main, figure, img {
 
 .main {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(21.3em, 1fr));
     gap: 1rem;
     max-width: 80em;
-    margin: 0 auto;
-}
-
-figure {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: auto;
+    padding: 15px;
 }
 
 img {
@@ -76,31 +84,29 @@ img {
     height: auto;
 }
 
-.main {
-    max-width: 80em;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(21.3em, 1fr));
-    gap: 1rem;
-    margin: auto;
+.templecard {
+    background-color: var(--secondary);
     padding: 15px;
+    border: .5px solid var(--shadow);
 }
 
-figcaption {
-    font-family:'Merriweather', sans-serif;
-    color: #36506f;
-    margin-top: 10px;
+p {
     text-align: center;
 }
 
+img {
+    box-shadow: 2px 2px 5px 2px var(--shadow);
+}
+
 footer {
-    background-color: #36506f;
+    background-color: var(--primary);
     text-align: center;
     margin-top: -13px;
 }
 
 .foot {
     padding: 10px;
-    color: #deccbb;
+    color: var(--secondary);
 }
 
 @media (max-width: 60em) {
@@ -110,7 +116,7 @@ footer {
     
     #menu {
         display: block;
-        color: #deccbb;
+        color: var(--secondary);
         position: absolute;
         top: 25px;
         right: 20px;
@@ -130,7 +136,7 @@ footer {
         gap: 10px;
         padding: 10px 0;
         text-align: center;
-        background-color: #36506f;
+        background-color: var(--primary);
         flex-direction: column;
     }
 
