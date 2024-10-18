@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practice</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Gavin Janda. Form Practice">
+    <meta name="author" content="Gavin Janda">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="title">WDD 131: Dynamic Web Fundamentals - Gavin Janda</h1>
+            <nav class="mainnav">
+                <a href="www.linkedin.com/in/gavin-janda-3b763a24a">LinkedIn</a>
+                <a href="https://byui.instructure.com">I-Learn</a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/5?lang=eng">Scripture</a>
+                <a href="">Final Project</a>
+            </nav>
+    </header>
+    <main>
+        <div>
+            <h2>Product Review</h2>
+        </div>
+        <form method="get" action="review.html" class="productrev">
+            <!--Select-->
+            <label>Product Name
+                <select id="product" name="product">
+            </label>
+                    <option value="" disabled selected>Choose a Product...</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            <!--Rating(Radios)-->
+            <div>Overall Rating</div>
+            <div class="radioRating">
+                <label>
+                    ⭐️
+                    <input type="radio" name="rating" value="1" required></label>
+                <label>
+                    ⭐️⭐️
+                    <input type="radio" name="rating" value="2" required></label>
+                <label>
+                    ⭐️⭐️⭐️
+                    <input type="radio" name="rating" value="3" required></label>
+                <label>
+                    ⭐️⭐️⭐️⭐️
+                    <input type="radio" name="rating" value="4" required></label>
+                <label>
+                    ⭐️⭐️⭐️⭐️⭐️
+                    <input type="radio" name="rating" value="5" required></label>
+            </div>
+            <!--Date-->
+            <label>Date of Installation<input type="date" id="dateInstalled" name="dateInstalled" required></label>
+            <!--Features(Checkbox)-->
+            <div>Which features did you like most?<br><em>(Check all that Apply)</em></div>
+            <label><input type="checkbox" id="features" name="durability" value="yes">Durability</label>
+            <label><input type="checkbox" id="features" name="design" value="yes">Design</label>
+            <label><input type="checkbox" id="features" name="value" value="yes">Value</label>
+            <label><input type="checkbox" id="features" name="versatility" value="yes">Versatility</label><br>
+            <!--Review-->
+            <label for="reviewWritten">Write a Review <span class="optional">(optional)</span></label>
+            <textarea id="reviewWritten" name="reviewWritten" rows="4" placeholder="Write a Review..."></textarea>
+            <label>Your name <span class="optional">(optional)</span>
+            <input type="text" id="name" name="name"></label>
+            <!--Submit Button-->
+            <input type="submit" value="Post Review">
+
+        </form>
+
+    </main>
+    <footer>
+        <p class="foot">
+            ©<span id="year"></span> | Gavin Janda | Utah
+        </p>
+        <p id="lastModified" class="foot"></p>
+    </footer>
+</body>
+</html>

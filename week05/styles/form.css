@@ -1,0 +1,155 @@
+:root {
+    --color-headings: #f0eee1;
+    --color-headings-background: #273849;
+    --main-background: #f0eee0;
+
+    --font-headings: 'Merriweather', sans-serif;
+    --font-other: 'Noto Sans', sans-serif;
+}
+
+header {
+    background-color: var(--color-headings-background);
+    text-align: center;
+    padding-bottom: 70px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+nav.mainnav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: var(--color-headings);
+}
+
+nav a {
+    color: var(--color-headings);
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+nav a:hover {
+    color: #9494e5;
+}
+
+h1 {
+    color: var(--color-headings);
+    font-family: var(--font-headings);
+    font-size: 2.5rem;
+}
+
+h2 {
+    text-align: center;
+    background-color: var(--color-headings-background);
+    color: var(--color-headings);
+    padding: 10px;
+    width: 100%;
+    max-width: 810px;
+    margin: 15px auto;
+    font-size: 1.7rem;
+    font-family: var(--font-headings);
+}
+
+form {
+    background-color: var(--main-background);
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    border: solid .5px black;
+    border-radius: 6px;
+    padding: 15px;
+    font-size: 1.2rem;
+}
+
+.productrev label {
+    color: var(--color-headings-background);
+    padding-top: 10px;
+    display: block;
+    font-family: var(--font-other);
+}
+
+div {
+    padding-top: 15px;
+    display: block;
+}
+
+.radioRating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.radioRating label {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.productrev input[type="radio"] {
+    margin-bottom: 15px;
+
+}
+
+.productrev input[type="checkbox"] {
+    margin-bottom: 15px;
+    width: 20px
+}
+
+.productrev input[type="text"],
+.productrev input[type="date"],
+.productrev select {
+    height: 44px;
+    font-size: 1.2rem;
+    max-width: 800px;
+    width: 80%;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.optional {
+    color: #51676e;
+}
+
+textarea {
+    width: 80%;
+    max-width: 800px;
+    font-size: 1.2rem;
+}
+
+.productrev input[type="submit"] {
+    height: 40px;
+    background-image: linear-gradient(#273849,#273840);
+    color: var(--color-headings);
+    width: 80%;
+    max-width: 800px;
+    font-size: 1.5rem;
+    margin: 10px auto auto;
+}
+
+.productrev input[type="submit"]:hover {
+    background-color: #5694b3;
+    transform: scale(1.02);
+}
+
+/* Footer */
+p {
+    font-size: 1.25rem;
+}
+
+footer {
+    background-color: var(--color-headings-background);
+    color: var(--color-headings);
+    text-align: center;
+    padding: 15px;
+    margin: 20px auto auto;
+    width: 100%;
+    max-width: 1393px;
+}
