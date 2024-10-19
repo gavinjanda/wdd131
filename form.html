@@ -25,21 +25,16 @@
     <main>
         <div>
             <h2>Product Review</h2>
+            <p class="info"><em class="required">* signifies field is required</em></p>
         </div>
         <form method="get" action="review.html" class="productrev">
             <!--Select-->
-            <label>Product Name
+            <label for="product">Product Name <span class="required">*</span></label>
                 <select id="product" name="product">
-            </label>
                     <option value="" disabled selected>Choose a Product...</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
                 </select>
             <!--Rating(Radios)-->
-            <div>Overall Rating</div>
+            <div>Overall Rating <span class="required">*</span></div>
             <div class="radioRating">
                 <label>
                     ⭐️
@@ -58,20 +53,20 @@
                     <input type="radio" name="rating" value="5" required></label>
             </div>
             <!--Date-->
-            <label>Date of Installation<input type="date" id="dateInstalled" name="dateInstalled" required></label>
+            <label>Date of Installation <span class="required">*</span><input type="date" id="dateInstalled" name="dateInstalled" required></label>
             <!--Features(Checkbox)-->
             <div>Which features did you like most?<br><em>(Check all that Apply)</em></div>
-            <label><input type="checkbox" id="features" name="durability" value="yes">Durability</label>
-            <label><input type="checkbox" id="features" name="design" value="yes">Design</label>
-            <label><input type="checkbox" id="features" name="value" value="yes">Value</label>
-            <label><input type="checkbox" id="features" name="versatility" value="yes">Versatility</label><br>
+            <label><input type="checkbox" id="durability" name="features" value="yes">Durability</label>
+            <label><input type="checkbox" id="design" name="features" value="yes">Design</label>
+            <label><input type="checkbox" id="value" name="features" value="yes">Value</label>
+            <label><input type="checkbox" id="versatility" name="features" value="yes">Versatility</label><br>
             <!--Review-->
             <label for="reviewWritten">Write a Review <span class="optional">(optional)</span></label>
             <textarea id="reviewWritten" name="reviewWritten" rows="4" placeholder="Write a Review..."></textarea>
             <label>Your name <span class="optional">(optional)</span>
             <input type="text" id="name" name="name"></label>
             <!--Submit Button-->
-            <input type="submit" value="Post Review">
+            <input type="submit" id="submitButton" value="Post Review">
 
         </form>
 

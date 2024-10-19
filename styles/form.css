@@ -51,22 +51,24 @@ h2 {
     background-color: var(--color-headings-background);
     color: var(--color-headings);
     padding: 10px;
-    width: 100%;
     max-width: 810px;
     margin: 15px auto;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-family: var(--font-headings);
 }
 
 form {
     background-color: var(--main-background);
-    width: 100%;
     max-width: 800px;
     margin: auto;
     border: solid .5px black;
     border-radius: 6px;
     padding: 15px;
     font-size: 1.2rem;
+}
+
+.required {
+    color: #C20000;
 }
 
 .productrev label {
@@ -79,6 +81,14 @@ form {
 div {
     padding-top: 15px;
     display: block;
+    font-family: var(--font-other);
+    color: var(--color-headings-background)
+}
+
+.info {
+    text-align: center;
+    opacity: 90%;
+    font-size: .7rem;
 }
 
 .radioRating {
@@ -139,6 +149,20 @@ textarea {
     transform: scale(1.02);
 }
 
+h3 {
+    font-size: 1.5rem;
+    font-family: var(--font-headings);
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.review {
+    font-size: 1.2rem;
+    font-family: var(--font-other);
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
 /* Footer */
 p {
     font-size: 1.25rem;
@@ -150,6 +174,12 @@ footer {
     text-align: center;
     padding: 15px;
     margin: 20px auto auto;
-    width: 100%;
     max-width: 1393px;
+}
+
+/* smaller screens */
+@media only screen and (max-width:30rem) {
+header {
+    height: 200px;
+}
 }
