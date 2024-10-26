@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toolin' Titan - Contact Us</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Toolin' Titan: Handyman Services is a handyman company made for any of those little construction projects that contractors don't care to take care of. This site is a place to learn more about the handyman, the services we provide, and a form to submit a request for a quote.">
+    <meta name="author" content="Gavin Janda">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.jpg" height="75" alt="Toolin' Titan Logo">
+        <h1>Toolin' Titan: Handyman Services</h1>
+        <div id="menu"></div>
+            <nav class="mainnav">
+                <a href="home.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+    </header>
+    <h2 class="contact-cap caption">Reach Out!</h2>
+    <main class="contact">
+        <picture class="contact-img">
+            <source srcset="images/contact-medium.webp" media="(max-width: 800px)" width="800px" height="900px">
+            <img src="images/contact-large1.webp" alt="Interior Design" loading="lazy">
+        </picture>
+        <form class="estimate-form contact-form">
+            <h2 class="title-rf">Request A Free Estimate!</h2>
+            <h4 class="required">* Indicates field is required</h4>
+            <fieldset>
+                <legend>Tell Us About You</legend>
+                <label for="fname">First name:<span class="required">*</span></label>
+                <input type="text" name="fname" id="fname" required>
+                <label for="lname">Last name:<span class="required">*</span></label>
+                <input type="text" name="lname" id="lname" required>
+                <label for="email">Email:<span class="required">*</span></label>
+                <input type="email" name="email" id="email" required>
+                <label for="phone">Phone number:</label>
+                <input type="tel" name="phone" id="phone">
+            </fieldset>
+            <fieldset class="radio">
+                <legend>Tell Us About Your Problem</legend>
+                <div>Which Trade Best Fits Your Repair</div>
+                <label class="radio-label"><input type=radio name="trade" value="plumbing-hvac">Plumbing/Air Conditioning/heating</label>
+                <label class="radio-label"><input type=radio name="trade" value="electric">Electric</label>
+                <label class="radio-label"><input type=radio name="trade" value="cabinet">Cabinetry</label>
+                <label class="radio-label"><input type=radio name="trade" value="other">Other</label>
+                <label for="description">Tell us a little more about it<span class="required">*</span></label>
+                <textarea name="description" id="description" placeholder="My heater isn't working..." rows="5"></textarea>
+            </fieldset>
+            <input type="submit" value="Get My Estimate">
+        </form>
+        <script src="scripts/getdates.js"></script>
+    </main>
+    <footer>
+        <p class="foot">
+            ©<span id="year"></span> | Gavin Janda | Utah
+        </p>
+        <p id="lastModified" class="foot"></p>
+    </footer>
+</body>
+</html>
